@@ -19,7 +19,7 @@ public:
 
 int main() {
 
-    Punto.x = 2; //Errore!! (commentare questa riga prima di eseguire)
+    //Punto.x = 2; //Errore!! (commentare questa riga prima di eseguire)
 
     Punto p1; // Deve sempre essere creato un oggetto appartenente a una classe -> Punto è la classe, p1 è l'oggetto specifico
     p1.x = 2; // L'oggetto ha uno stato e viene valorizzato
