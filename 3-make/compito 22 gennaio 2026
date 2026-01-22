@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+class portaFoglio{
+public:
+   float valore;
+
+portaFoglio(){
+valore=3.00;//costruttore con valore assegnato predefinito
+
+}
+portaFoglio(float a){
+valore=a;//cosatruttore con nvalore passato dal main
+}
+void stampa(){
+cout<<valore<<endl;
+
+
+}
+float agg(float v1, char se){
+
+    if(se=='+'){
+      valore=valore+v1;
+
+    }
+    else if(se=='-'){
+      valore=valore-v1;
+
+    }
+    return valore;
+}
+};
+
+
+
+
+int main()
+{
+portaFoglio p1;
+portaFoglio P2(500);
+
+p1.stampa();
+P2.stampa();
+float v1;
+char se;
+
+
+
+cout<<"inserire numero a caso"<<endl;
+cin>>v1;
+cout<<"inserire + per somma, inserire - per sottrazione"<<endl;
+cin>>se;
+cout<<P2.agg(v1, se);
+
+return 0;
+}
